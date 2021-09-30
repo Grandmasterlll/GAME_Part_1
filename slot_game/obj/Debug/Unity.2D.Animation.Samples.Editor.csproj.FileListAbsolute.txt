@@ -1,0 +1,2 @@
+C:\Myprogram\Git\slot_game\obj\Debug\Unity.2D.Animation.Samples.Editor.csprojAssemblyReference.cache
+C:\Myprogram\Git\slot_game\obj\Debug\Unity.2D.Animation.Samples.Editor.csproj.CoreCompileInputs.cache
