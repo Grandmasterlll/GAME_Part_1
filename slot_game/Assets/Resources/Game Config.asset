@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5ddbf8500c49444c808655f379f60cd, type: 3}
+  m_Name: Game Config
+  m_EditorClassIdentifier: 
+  symbols:
+  - {fileID: 11400000, guid: 6b96b0a6dec23e547905e5756ba8fdc3, type: 2}
+  - {fileID: 11400000, guid: 060316581d1873d4b95b021f9f3cfaa9, type: 2}
+  - {fileID: 11400000, guid: 302479e764455ea49b354b4af6466ba9, type: 2}
+  - {fileID: 11400000, guid: 7524cfe132733fe49ba315ea0f528602, type: 2}
+  - {fileID: 11400000, guid: 598de3bc9832060428bbd9f7ff397744, type: 2}
+  - {fileID: 11400000, guid: fa85e5fc5ef785b4fb1fa66ed7398880, type: 2}
+  - {fileID: 11400000, guid: 77653d2dbc29da74dbc24bca8b5d95ae, type: 2}
+  - {fileID: 11400000, guid: dd0d88a98bc4cc3429226d54c4972750, type: 2}
+  finalScrins: []
