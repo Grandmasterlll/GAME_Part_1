@@ -8,7 +8,7 @@ public class ReReel : MonoBehaviour
     [SerializeField] GameConfig gameConfig;
     [SerializeField] private RectTransform[] GameObject;
 
-    [SerializeField] private readonly float exitPos = 202;
+    [SerializeField] private readonly float exitPos = 200;
     [SerializeField] private float sizeSymbol = 200;
     [SerializeField] private float quantitySymbol = 3;
     [SerializeField] private float const1 = 580;

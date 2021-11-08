@@ -261,7 +261,7 @@ MonoBehaviour:
   startEase: 5
   stopEase: 6
   startDist: -800
-  linearDist: -6400
+  linearDist: -3200
   stopDist: -4000
   startD: 0.5
   linearD: 1.5
