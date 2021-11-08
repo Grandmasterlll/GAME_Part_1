@@ -9,6 +9,10 @@ public class GameConfig : ScriptableObject
     [SerializeField] private SymbolData[] symbols;
     [SerializeField] private FinalScrinsData[] finalScrins;
 
+    [SerializeField] private int visibleSymbolsOnReel;
+
     public SymbolData[] Symbols  => symbols; 
-    public FinalScrinsData[] FinalScrins  => finalScrins; 
+    public FinalScrinsData[] FinalScrins  => finalScrins;
+
+    public int VisibleSymbolsOnReel => visibleSymbolsOnReel; 
 }

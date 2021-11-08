@@ -293,3 +293,7 @@ C:\Myprogram\Git\slot_game\obj\Debug\Unity.2D.Animation.Samples.Runtime.csproj.C
 C:\Myprogram\Git\slot_game\obj\Debug\Unity.2D.Animation.Samples.Runtime.csproj.CopyComplete
 C:\Myprogram\Git\slot_game\obj\Debug\Unity.2D.Animation.Samples.Runtime.dll
 C:\Myprogram\Git\slot_game\obj\Debug\Unity.2D.Animation.Samples.Runtime.pdb
+C:\Users\Валентин\Documents\GitHub\GAME_Part_1\slot_game\obj\Debug\Unity.2D.Animation.Samples.Runtime.csprojAssemblyReference.cache
+C:\Users\Валентин\Documents\GitHub\GAME_Part_1\slot_game\obj\Debug\Unity.2D.Animation.Samples.Runtime.csproj.CoreCompileInputs.cache
+C:\Users\Валентин\Documents\GitHub\GAME_Part_1\slot_game\obj\Debug\Unity.2D.Animation.Samples.Runtime.dll
+C:\Users\Валентин\Documents\GitHub\GAME_Part_1\slot_game\obj\Debug\Unity.2D.Animation.Samples.Runtime.pdb

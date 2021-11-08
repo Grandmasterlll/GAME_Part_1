@@ -63,16 +63,17 @@ public class ReelScroll : MonoBehaviour
     {
         reelDictionary[reels].ReelState = ReelState.Spin;
         DOTween.Kill(reels);
-        reels.DOAnchorPosY(linearDist, linearD).SetEase(Ease.Linear).OnComplete(() => Scrollstop(reels));
+        reels.DOAnchorPosY(linearDist, linearD).SetEase(Ease.Linear).OnComplete(() => CorrectReelPos(reels));
     }
     private void Scrollstop(RectTransform reels)
     {
         reelDictionary[reels].ReelState = ReelState.Stopping;
         DOTween.Kill(reels);
-       // var reelCurentPosY = reels.localPosition.y;
+        var reelCurentPosY = reels.localPosition.y;
        // var exctraDistance = CalculatesExtraDistance(reelCurentPosY);
-       // var sloDownDistance = reelCurentPosY - symbolHeight * visibleSymbolsOnReel-exctraDistance;
-        reels.DOAnchorPosY(/*sloDownDistance*/ stopDist, stopD)
+
+        var sloDownDistance = reelCurentPosY - symbolHeight * visibleSymbolsOnReel /*- exctraDistance*/;
+        reels.DOAnchorPosY(sloDownDistance /*stopDist*/, stopD)
             .SetEase(stopEase)
             .OnComplete(() => 
             {
@@ -106,29 +107,29 @@ public class ReelScroll : MonoBehaviour
         {
             if (reelDictionary[item].ReelState==ReelState.Spin)
             {
-                Scrollstop(item);
+                CorrectReelPos(item);
             }
             //stop(item);
         }
     }
-    //private float CalculatesExtraDistance(float reelCurentPosY)
-    //{
-    //    var traveledDistance = reelstartposY - reelCurentPosY;
-    //    var symbolsScrilled = traveledDistance / symbolHeight;
-    //    var integerPart = Mathf.Floor(symbolsScrilled);
-    //    var fractionalPart = symbolsScrilled - integerPart;
-    //    var extraDistance = (1 - fractionalPart) * symbolHeight;
-    //        return extraDistance;
-    //}
-    //// Start is called before the first frame update
-    //void Start()
-    //{
 
-    //}
-
-    //// Update is called once per frame
-    //void Update()
-    //{
-
-    //}
+    private float CalculatesExtraDistance(float reelCurentPosY)
+    {
+        var traveledDistance = reelstartposY - reelCurentPosY;
+        var symbolsScrilled = traveledDistance / symbolHeight;
+        var integerPart = Mathf.Floor(symbolsScrilled);
+        var fractionalPart = symbolsScrilled - integerPart;
+        var extraDistance = (1 - fractionalPart) * symbolHeight;
+        return extraDistance;
+    }
+    private void CorrectReelPos(RectTransform reelrt)
+    {
+        DOTween.Kill(reelrt);
+        var currentReelPos = reelrt.localPosition.y;
+        var extraDistance = CalculatesExtraDistance(currentReelPos);
+        var correctionDistance = currentReelPos - extraDistance;
+        var correctionDuration = extraDistance / -(linearDist/linearD);
+        reelrt.DOAnchorPosY(correctionDistance, correctionDuration).OnComplete(() => Scrollstop(reelrt));
+    }
+  
 }

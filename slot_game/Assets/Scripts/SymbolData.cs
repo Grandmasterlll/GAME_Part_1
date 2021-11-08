@@ -13,19 +13,4 @@ public class SymbolData : ScriptableObject
 
     public float SymbolCost  => symbolCost; 
     internal SymbolType SymbolType  => symbolType; 
-
-
-
-
-    // Start is called before the first frame update
-    //void Start()
-    //{
-
-    //}
-
-    //// Update is called once per frame
-    //void Update()
-    //{
-
-    //}
 }

@@ -261,7 +261,7 @@ MonoBehaviour:
   startEase: 5
   stopEase: 6
   startDist: -800
-  linearDist: -3200
+  linearDist: -6400
   stopDist: -4000
   startD: 0.5
   linearD: 1.5
@@ -375,6 +375,10 @@ PrefabInstance:
       propertyPath: ReelID
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4780377558789813043, guid: e51bd1c967de4c14f9adf4ca10a7782e, type: 3}
+      propertyPath: gameConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: 947ff36d5729b91418f67e4026649531, type: 2}
     - target: {fileID: 8769401570905697580, guid: e51bd1c967de4c14f9adf4ca10a7782e, type: 3}
       propertyPath: m_Name
       value: Reel 2
@@ -730,6 +734,10 @@ PrefabInstance:
       propertyPath: ReelID
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4780377558789813043, guid: e51bd1c967de4c14f9adf4ca10a7782e, type: 3}
+      propertyPath: gameConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: 947ff36d5729b91418f67e4026649531, type: 2}
     - target: {fileID: 8769401570905697580, guid: e51bd1c967de4c14f9adf4ca10a7782e, type: 3}
       propertyPath: m_Name
       value: Reel 3
@@ -1405,7 +1413,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 371349230}
         m_TargetAssemblyTypeName: ReelScroll, Assembly-CSharp
-        m_MethodName: StartReel
+        m_MethodName: ScrollStartReel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1484,6 +1492,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4780377558789813043, guid: e51bd1c967de4c14f9adf4ca10a7782e, type: 3}
+      propertyPath: gameConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: 947ff36d5729b91418f67e4026649531, type: 2}
     - target: {fileID: 4780377558789813043, guid: e51bd1c967de4c14f9adf4ca10a7782e, type: 3}
       propertyPath: GameObject.Array.data[0]
       value: 

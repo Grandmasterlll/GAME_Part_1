@@ -21,4 +21,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fa85e5fc5ef785b4fb1fa66ed7398880, type: 2}
   - {fileID: 11400000, guid: 77653d2dbc29da74dbc24bca8b5d95ae, type: 2}
   - {fileID: 11400000, guid: dd0d88a98bc4cc3429226d54c4972750, type: 2}
-  finalScrins: []
+  finalScrins:
+  - {fileID: 11400000, guid: 91fa0c573c85c684896c3b95cb87390a, type: 2}
+  - {fileID: 11400000, guid: 09aef273e5852cc41bbe6d4bd286b180, type: 2}
+  - {fileID: 11400000, guid: d48f855938407b148886afacc079fc57, type: 2}
+  - {fileID: 11400000, guid: 27d6cc329764856469c346373e1e9b36, type: 2}
+  - {fileID: 11400000, guid: 7bbd11692da76e645b87697c6a9e532a, type: 2}
+  visibleSymbolsOnReel: 3
